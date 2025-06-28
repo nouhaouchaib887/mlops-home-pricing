@@ -10,13 +10,27 @@ The goal is not only to create accurate house price predictions but to do so wit
 
 This project integrates modern MLOps tools and practices:
 
+
+### Design Patterns
+The project implements key design patterns to ensure maintainable and extensible code:
+
+#### Factory Method Pattern
+Used for creating different data ingestion components (database, API, file loaders):
+
+![Factory Method Pattern](./images/factory_design_concept.png)
+![Factory Method Pattern](./images/factory_design_example.png)
+
+#### Strategy Pattern  
+Applied for flexible EDA approaches and model selection strategies:
+
+![Factory Method Pattern](./images/strategy_design_concept.png)
+![Factory Method Pattern](./images/strategy_design_example.png)
 ###  Version Control
 - Git is used for tracking code changes and managing branches.
 - DVC (Data Version Control) may be used for dataset tracking and reproducibility.
 
 ###  Modular Architecture
 - Modular code organization following clean architecture principles (data ingestion, preprocessing, training, evaluation, serving, etc.)
-- Design patterns such as **Factory** (for data loaders) and **Strategy** (for EDA or model tuning strategies).
 
 ###  Continuous Integration / Continuous Deployment (CI/CD)
 - Automated testing, linting, and deployment using GitHub Actions.
